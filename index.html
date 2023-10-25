@@ -1,42 +1,43 @@
 <!doctype html>
 <html lang="en-us">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Unity WebGL Player | Roupas</title>
-	
-	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-		}
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-		canvas {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-		}
-	</style>
-	<link rel="shortcut icon" href="TemplateData/favicon.ico" />
-	<script src="TemplateData/UnityProgress.js"></script>
-</head>
-<body class="template">
-	<div class="template-wrap clear">
-		<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>
-	</div>
-	<script type='text/javascript'>
-		var Module = {
-		TOTAL_MEMORY: 268435456,
-	    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-	    compatibilitycheck: null,
-	    backgroundColor: "#FFFFFF",
-	    splashStyle: "Dark",
-	    dataUrl: "Release/unity.data",
-	    codeUrl: "Release/unity.js",
-	    asmUrl: "Release/unity.asm.js",
-	    memUrl: "Release/unity.mem",backgroundImage: "background.jpg",  };
-	</script>
-	<script src="Release/UnityLoader.js"></script>
+		<title>Unity WebGL Player | Roupas</title>
+		
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
 
-</body>
+			canvas {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		</style>
+		<link rel="shortcut icon" href="TemplateData/favicon.ico" />
+		<script src="TemplateData/UnityProgress.js"></script>
+	</head>
+
+	<body class="template">
+		<div class="template-wrap clear">
+			<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>
+		</div>
+		<script type='text/javascript'>
+			var Module = {
+			TOTAL_MEMORY: 268435456,
+			errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+			compatibilitycheck: null,
+			backgroundColor: "#FFFFFF",
+			splashStyle: "Dark",
+			dataUrl: "Release/unity.data",
+			codeUrl: "Release/unity.js",
+			asmUrl: "Release/unity.asm.js",
+			memUrl: "Release/unity.mem",backgroundImage: "background.jpg",  };
+		</script>
+		<script src="Release/UnityLoader.js"></script>
+	</body>
 </html>

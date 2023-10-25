@@ -6,7 +6,8 @@
  
       if (($_FILES["file"]["type"] == "image/png") && ($_FILES["file"]["size"] < 20000000000))
       { 
-            if ($_FILES["file"]["error"] > 0){ 
+            if ($_FILES["file"]["error"] > 0)
+            { 
                   echo "Return Code: " . $_FILES["file"]["error"] . ""; 
             }
             else
@@ -14,8 +15,10 @@
                   $nomeIni = substr($_FILES["file"]["name"],0,3);
                   $nomeIni = strtolower($nomeIni);
 
-                  if($nomeIni == 'inf'){
-                        if (file_exists("upload/Info/" . $_FILES["file"]["name"])){
+                  if($nomeIni == 'inf')
+                  {
+                        if (file_exists("upload/Info/" . $_FILES["file"]["name"]))
+                        {
                               echo $_FILES["file"]["name"] . " already exists. ";
                         }
                         else
